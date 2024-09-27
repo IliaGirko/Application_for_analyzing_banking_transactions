@@ -1,7 +1,6 @@
 from src.views import file_with_expenses_for_the_period
 
 
-
 def test_file_with_expenses_for_the_period():
     assert file_with_expenses_for_the_period("09.07.2018 18:29:03") != {
         "cards": "time data '09.07.2018 18:29:03' does not match format '%Y-%m-%d %H:%M:%S'",

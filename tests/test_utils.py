@@ -1,6 +1,7 @@
+import datetime
 import os
 from unittest.mock import patch
-import datetime
+
 import pandas as pd
 from dotenv import load_dotenv
 

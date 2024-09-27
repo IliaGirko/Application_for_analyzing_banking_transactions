@@ -1,11 +1,12 @@
 import json
+import logging
 import os
 from datetime import datetime
+from typing import Any
+
 import pandas as pd
 import requests
-import logging
 from dotenv import load_dotenv
-from typing import Any
 
 logger = logging.getLogger("utils.py")
 logger.setLevel(logging.DEBUG)

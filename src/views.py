@@ -1,11 +1,8 @@
-
 import logging
-
 from typing import Any
-from utils import (read_excel_file, filter_data_card_user, user_greeting, top_transactions_by_payment_amount,
-                   exchange_rate_euro, exchange_rate_dollar, data_s_and_p)
 
-
+from utils import (data_s_and_p, exchange_rate_dollar, exchange_rate_euro, filter_data_card_user, read_excel_file,
+                   top_transactions_by_payment_amount, user_greeting)
 
 logger = logging.getLogger("views.py")
 logger.setLevel(logging.DEBUG)
@@ -15,7 +12,6 @@ logger_formatter = logging.Formatter(
 )
 logger_handler.setFormatter(logger_formatter)
 logger.addHandler(logger_handler)
-
 
 
 def file_with_expenses_for_the_period(date: str) -> dict[Any | list[dict[str | Any]]] | str:
